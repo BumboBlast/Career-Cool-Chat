@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    <category>
+        <pattern>RECOMMENDDATASCIENTIST</pattern>
+        <template>
+            Data Scientist might be a good fit for you!<br/>
+            Would you like to see information about careers in Data Science?
+            <reply><text>Yes, please</text><postback>DATAURL</postback></reply>
+            <reply><text>No, thanks</text><postback>TRYAGAIN</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMENDDATABASE</pattern>
+        <template>
+            Database Administrator might be a good fit for you!<br/>
+            Would you like to see information about careers in Database Administration?
+            <reply><text>Yes, please</text><postback>DATABASEURL</postback></reply>
+            <reply><text>No, thanks</text><postback>TRYAGAIN</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMENDWEBDESIGNER</pattern>
+        <template>
+            Web Designer might be a good fit for you!<br/>
+            Would you like to see information about careers in Web Design?
+            <reply><text>Yes, please</text><postback>WEBURL</postback></reply>
+            <reply><text>No, thanks</text><postback>TRYAGAIN</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMENDSOFTWARE</pattern>
+        <template>
+            Software Engineer might be a good fit for you!<br/>
+            Would you like to see information about careers in Software Engineering?
+            <reply><text>Yes, please</text><postback>SOFTWAREURL</postback></reply>
+            <reply><text>No, thanks</text><postback>TRYAGAIN</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>RECOMMENDNETWORK</pattern>
+        <template>
+            Network Administrator might be a good fit for you!<br/>
+            Would you like to see information about careers in Network Administration?
+            <reply><text>Yes, please</text><postback>NETURL</postback></reply>
+            <reply><text>No, thanks</text><postback>TRYAGAIN</postback></reply>
+        </template>
+    </category>
+    
+    
+    <category>
+        <pattern>TRYAGAIN</pattern>
+        <template>
+            Would you like to retake the test and try to find a new job recommendation?
+            <reply><text>Retake the test</text><postback>STARTQUESTIONNAIRE</postback></reply>
+            <reply><text>No, I'm done.</text><postback>GOODBYE</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>Thank you for your time. Have a good day (:</template>
+    </category>
+    
+</aiml>

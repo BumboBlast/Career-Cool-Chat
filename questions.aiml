@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+<topic name="questionnaire">
+    <category>
+        <pattern>FIRSTQUESTION</pattern>
+        <template>
+            How much do you enjoy programming?
+            <reply><text>A lot</text><postback>YESPROGRAMMING</postback></reply>
+            <reply><text>Not a lot</text><postback>NOPROGRAMMING</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SECONDQUESTION</pattern>
+        <template>
+            Is math fun for you?
+            <reply><text>Math is fun</text><postback>YESMATH</postback></reply>
+            <reply><text>I Hate Math</text><postback>NOMATH</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>THIRDQUESTION</pattern>
+        <template>
+            Is it more enjoyable to work with hardware or software?
+            <reply><text>Software</text><postback>YESSOFTWARE</postback></reply>
+            <reply><text>Hardware</text><postback>NOSOFTWARE</postback></reply>
+            <reply><text>Either is good</text><postback>EITHERSOFTWARE</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>FOURTHQUESTION</pattern>
+        <template>
+            Do you like to solve tough programming problems?
+            <reply><text>I enjoy hard problems.</text><postback>YESHARDPROBLEMS</postback></reply>
+            <reply><text>I prefer to solve routine problems.</text><postback>NOHARDPROBLEMS</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>FIFTHQUESTION</pattern>
+        <template>
+            How important is creativity on the job to you?
+            <reply><text>Creativity is extremely important.</text><postback>EXTREMECREATIVITY</postback></reply>
+            <reply><text>I'd like to be a little creative sometimes.</text><postback>LITTLECREATIVE</postback></reply>
+            <reply><text>Creativity is not that important to me.</text><postback>NOTCREATIVE</postback></reply>
+            <reply><text>I don't want to be creative at all at work.</text><postback>NEVERCREATIVE</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SIXTHQUESTION</pattern>
+        <template>
+            Does it matter that you create a tangible product?
+            <reply><text>I need to be able to see my work.</text><postback>YESTANGIBLE</postback></reply>
+            <reply><text>I don't care as long as I get my paycheck.</text><postback>NOTANGIBLE</postback></reply>
+        </template>
+    </category>
+</topic>
+
+
+
+
+</aiml>

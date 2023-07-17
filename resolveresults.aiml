@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+
+
+
+<category>
+    <pattern>RESULTS</pattern>
+    <template>Based on your responses, <srai>JMAXJOB</srai></template>
+</category>
+
+
+
+
+<!-- here i try my best to figureout how to do conditions without literals! -->
+<!-- because why in the world would anyone need to do that? -->
+
+
+<!-- 
+    this function is going to do all the work for me:
+    
+    It will 
+    1. take all the variables as params (NAMES and VALUES)
+    2. return the VARIABLE NAME with the largest VALUE
+    3. since its only being used for this APPRENTLY VERY RARE PROBELM, ill hard code them into this function.
+-->
+
+<category>
+    <pattern>JMAXJOB</pattern>
+    <template>
+        <condition>
+            <li name="DATA"     value="16"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="16"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="16"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="16"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="16"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="15"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="15"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="15"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="15"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="15"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="14"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="14"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="14"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="14"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="14"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="13"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="13"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="13"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="13"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="13"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="12"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="12"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="12"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="12"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="12"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="11"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="11"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="11"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="11"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="11"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="10"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="10"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="10"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="10"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="10"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="9"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="9"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="9"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="9"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="9"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="8"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="8"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="8"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="8"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="8"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="7"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="7"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="7"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="7"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="7"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="6"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="6"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="6"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="6"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="6"><srai>RECOMMENDNETWORK</srai></li>
+            
+            <li name="DATA"     value="5"><srai>RECOMMENDDATASCIENTIST</srai></li>
+            <li name="DATABASE" value="5"><srai>RECOMMENDDATABASE</srai></li>
+            <li name="WEB"      value="5"><srai>RECOMMENDWEBDESIGNER</srai></li>
+            <li name="SOFTWARE" value="5"><srai>RECOMMENDSOFTWARE</srai></li>
+            <li name="NETWORK"  value="5"><srai>RECOMMENDNETWORK</srai></li>            
+        </condition>
+    </template>
+</category>
+
+
+</aiml>

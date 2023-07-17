@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+
+    <category>
+        <pattern>DATAURL</pattern>
+        <template>
+            Information about 
+            <link>
+                <text>Data Science</text>
+                <url>https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Data Scientists</url>
+            </link>
+            <reply><text>Got it.</text><postback>TRYAGAIN</postback></reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>DATABASEURL</pattern>
+        <template>
+            Information about 
+            <link>
+                <text>Data Base Administation</text>
+                <url>https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Database Administrators</url>
+            </link>
+            <reply><text>Got it.</text><postback>TRYAGAIN</postback></reply>         
+        </template>
+    </category>
+    
+    <category>
+        <pattern>WEBURL</pattern>
+        <template>
+            Information about 
+            <link>
+                <text>Web Design</text>
+                <url>https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Web Developers</url>
+            </link>
+            <reply><text>Got it.</text><postback>TRYAGAIN</postback></reply>        
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SOFTWAREURL</pattern>
+        <template>
+            Information about 
+            <link>
+                <text>Software Development</text>
+                <url>https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Software Developers</url>
+            </link>
+            <reply><text>Got it.</text><postback>TRYAGAIN</postback></reply>            
+        </template>
+    </category>
+    
+    <category>
+        <pattern>NETURL</pattern>
+        <template>
+            Information about 
+            <link>
+                <text>Network Administration</text>
+                <url>https://www.careeronestop.org/Toolkit/Careers/Occupations/occupation-profile.aspx?keyword=Network and Computer Systems Administrators</url>
+            </link>
+            <reply><text>Got it.</text><postback>TRYAGAIN</postback></reply>           
+        </template>
+    </category>    
+
+</aiml>

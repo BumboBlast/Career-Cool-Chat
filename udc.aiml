@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<!-- Ultimate Default Category -->
+
+<category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li>Type 'hi' or 'hello' to begin.</li>
+            <li>Try saying 'hi' or 'begin'</li>
+            <li>Didn't quite get that. Try starting over with 'hello'</li>
+        </random>
+    </template>
+</category>
+
+
+
+<!--              Greeting and start the questionnaire                       -->
+
+
+<category>
+    <pattern>HELLO ^</pattern>
+    <template>
+        Hello! I'm a bot designed to help you decide on your career path!
+        I'll do my best to  identify your strengths and preferences,
+        then help you decide which career options to consider.<br/><br/><br/>
+        Are you ready to start?
+        <reply><text>Yes</text><postback>STARTQUESTIONNAIRE</postback></reply>
+        <reply><text>Not yet</text><postback>NOTSTARTQUESTIONNAIRE</postback></reply>
+    </template>
+</category>
+
+<category>
+    <pattern>STARTQUESTIONNAIRE</pattern>
+    <template>
+        <!-- initialize variables -->
+        <think><set name="DATA">5</set></think>
+        <think><set name="NETWORK">5</set></think>
+        <think><set name="WEB">5</set></think>
+        <think><set name="DATABASE">5</set></think>
+        <think><set name="SOFTWARE">5</set></think>
+        
+        
+        Perfect! Let's begin!<br/>
+        <think> <set name="topic">questionnaire</set>!</think>
+        <reply><text>Ok</text><postback>FIRSTQUESTION</postback></reply>
+    </template>
+</category>
+
+<category>
+    <pattern>NOTSTARTQUESTIONNAIRE</pattern>
+    <template>No problem, just say hello again when you're ready! (:</template>
+</category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>

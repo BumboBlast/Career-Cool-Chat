@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<!-- answers -->
+
+<topic name="questionnaire">
+    <!-- Likes Programming -->
+    <category>
+        <pattern>YESPROGRAMMING</pattern>
+        <template>
+            <think><set name="DATA"><map><name>successor</name><get name="DATA"/></map></set></think>
+            <think><set name="DATABASE"><map><name>successor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="SOFTWARE"><map><name>successor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="WEB"><map><name>successor</name><get name="WEB"/></map></set></think>  
+            <srai>SECONDQUESTION</srai>
+        </template>
+    </category>
+    
+    <!-- DISlikes programming. -->
+    <category>
+        <pattern>NOPROGRAMMING</pattern>
+        <template>
+            <think><set name="DATA"><map><name>predecessor</name><get name="DATA"/></map></set></think>
+            <think><set name="DATABASE"><map><name>predecessor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="SOFTWARE"><map><name>predecessor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="NETWORK"><map><name>successor</name><get name="NETWORK"/></map></set></think>
+            <srai>SECONDQUESTION</srai>
+        </template>
+    </category>
+    
+    
+    <!-- Likes math. -->
+    <category>
+        <pattern>YESMATH</pattern>
+        <template>
+            <think><set name="DATA"><map><name>successor</name><get name="DATA"/></map></set></think>
+            <think><set name="NETWORK"><map><name>successor</name><get name="NETWORK"/></map></set></think>
+            <think><set name="SOFTWARE"><map><name>successor</name><get name="SOFTWARE"/></map></set></think>
+            <srai>THIRDQUESTION</srai>
+        </template>
+    </category>
+    
+    <!-- Dislikes math -->
+    <category>
+        <pattern>NOMATH</pattern>
+        <template>
+            <think><set name="WEB"><map><name>successor</name><get name="WEB"/></map></set></think>            
+            <think><set name="DATA"><map><name>predecessor</name><get name="DATA"/></map></set></think>
+            <think><set name="NETWORK"><map><name>predecessor</name><get name="NETWORK"/></map></set></think>
+            <think><set name="SOFTWARE"><map><name>predecessor</name><get name="SOFTWARE"/></map></set></think>
+            <srai>THIRDQUESTION</srai>
+        </template>
+    </category>  
+    
+    
+    <!-- Prefers software -->
+    <category>
+        <pattern>YESSOFTWARE</pattern>
+        <template>
+            <think><set name="WEB"><map><name>successor</name><get name="WEB"/></map></set></think>
+            <think><set name="SOFTWARE"><map><name>successor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="NETWORK"><map><name>predecessor</name><get name="NETWORK"/></map></set></think>
+            <srai>FOURTHQUESTION</srai>
+        </template>
+    </category>
+    
+    <!-- Prefers hardware -->
+    <category>
+        <pattern>NOSOFTWARE</pattern>
+        <template>
+            <think><set name="NETWORK"><map><name>successor</name><get name="NETWORK"/></map></set></think>
+            <think><set name="DATA"><map><name>predecessor</name><get name="DATA"/></map></set></think>
+            <think><set name="DATABASE"><map><name>predecessor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="WEB"><map><name>predecessor</name><get name="WEB"/></map></set></think>
+            <think><set name="SOFTWARE"><map><name>predecessor</name><get name="SOFTWARE"/></map></set></think>
+            <srai>FOURTHQUESTION</srai>
+        </template>
+    </category>
+    
+    <!-- No preference on hardware/software -->
+    <category>
+        <pattern>EITHERSOFTWARE</pattern>
+        <template>
+            <think><set name="DATA"><map><name>successor</name><get name="DATA"/></map></set></think>
+            <think><set name="DATABASE"><map><name>successor</name><get name="DATABASE"/></map></set></think>
+            <srai>FOURTHQUESTION</srai>
+        </template>
+    </category>
+    
+    
+    <!-- Likes tough problems -->
+    <category>
+        <pattern>YESHARDPROBLEMS</pattern>
+        <template>
+            <think><set name="SOFTWARE"><map><name>successor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="NETWORK"><map><name>predecessor</name><get name="NETWORK"/></map></set></think>
+            <think><set name="DATABASE"><map><name>predecessor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="WEB"><map><name>predecessor</name><get name="WEB"/></map></set></think>
+            <think><set name="DATA"><map><name>successor</name><get name="DATA"/></map></set></think>
+            <srai>FIFTHQUESTION</srai>
+        </template>
+    </category>
+    
+    <!-- Likes ROUTINE problems -->
+    <category>
+        <pattern>NOHARDPROBLEMS</pattern>
+        <template>
+            <think><set name="DATA"><map><name>predecessor</name><get name="DATA"/></map></set></think>
+            <think><set name="DATABASE"><map><name>successor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="WEB"><map><name>successor</name><get name="WEB"/></map></set></think>
+            <think><set name="SOFTWARE"><map><name>predecessor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="NETWORK"><map><name>successor</name><get name="NETWORK"/></map></set></think>
+            <srai>FIFTHQUESTION</srai>
+        </template>
+    </category>  
+    
+    
+    <!-- creativity is extremely important -->
+    <category>
+        <pattern>EXTREMECREATIVITY</pattern>
+        <template>
+            <think><set name="SOFTWARE"><map><name>successor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="WEB"><map><name>successor</name><get name="WEB"/></map></set></think>
+            <think><set name="DATABASE"><map><name>predecessor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="NETWORK"><map><name>predecessor</name><get name="NETWORK"/></map></set></think>
+            <think><set name="DATA"><map><name>predecessor</name><get name="DATA"/></map></set></think>
+            <srai>SIXTHQUESTION</srai>
+        </template>
+    </category>
+    
+    <!-- creativity is a little important -->
+    <category>
+        <pattern>LITTLECREATIVE</pattern>
+        <template>
+            <think><set name="SOFTWARE"><map><name>successor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="WEB"><map><name>successor</name><get name="WEB"/></map></set></think>
+            <think><set name="DATABASE"><map><name>predecessor</name><get name="DATABASE"/></map></set></think>
+            <srai>SIXTHQUESTION</srai>
+        </template>
+    </category>  
+    
+    <!-- creativity is not important -->
+    <category>
+        <pattern>NOTCREATIVE</pattern>
+        <template>
+            <think><set name="SOFTWARE"><map><name>predecessor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="WEB"><map><name>successor</name><get name="WEB"/></map></set></think>
+            <think><set name="DATABASE"><map><name>successor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="DATA"><map><name>successor</name><get name="DATA"/></map></set></think>
+            <srai>SIXTHQUESTION</srai>
+        </template>
+    </category>    
+    
+    <!-- creativity is NEVER important at all! -->
+    <category>
+        <pattern>NEVERCREATIVE</pattern>
+        <template>
+            <think><set name="SOFTWARE"><map><name>predecessor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="WEB"><map><name>predecessor</name><get name="WEB"/></map></set></think>
+            <think><set name="DATABASE"><map><name>successor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="NETWORK"><map><name>successor</name><get name="NETWORK"/></map></set></think>
+            <think><set name="DATA"><map><name>successor</name><get name="DATA"/></map></set></think>
+            <srai>SIXTHQUESTION</srai>
+        </template>
+    </category>
+    
+    <!-- Tangiblity is important! -->
+    <category>
+        <pattern>YESTANGIBLE</pattern>
+        <template>
+            <think><set name="SOFTWARE"><map><name>successor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="WEB"><map><name>successor</name><get name="WEB"/></map></set></think>
+            <think><set name="DATABASE"><map><name>predecessor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="NETWORK"><map><name>predecessor</name><get name="NETWORK"/></map></set></think>
+            <think><set name="DATA"><map><name>predecessor</name><get name="DATA"/></map></set></think>
+            <srai>RESULTS</srai>
+        </template>
+    </category>
+    
+    <!-- Tangiblity is NOT important! -->
+    <category>
+        <pattern>NOTANGIBLE</pattern>
+        <template>
+            <think><set name="SOFTWARE"><map><name>predecessor</name><get name="SOFTWARE"/></map></set></think>
+            <think><set name="WEB"><map><name>predecessor</name><get name="WEB"/></map></set></think>
+            <think><set name="DATABASE"><map><name>successor</name><get name="DATABASE"/></map></set></think>
+            <think><set name="NETWORK"><map><name>successor</name><get name="NETWORK"/></map></set></think>
+            <think><set name="DATA"><map><name>successor</name><get name="DATA"/></map></set></think>
+            <srai>RESULTS</srai>
+        </template>
+    </category>
+</topic>
+</aiml>
